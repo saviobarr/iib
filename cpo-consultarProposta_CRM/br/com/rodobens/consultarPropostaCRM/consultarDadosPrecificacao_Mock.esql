@@ -1,0 +1,137 @@
+BROKER SCHEMA br.com.rodobens.consultarPropostaCRM
+DECLARE ns NAMESPACE 'http://cpoconsultarPropostaCRM';
+
+
+CREATE COMPUTE MODULE consultarDadosPrecificacao_Mock
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		-- CALL CopyMessageHeaders();
+		-- CALL CopyEntireMessage();
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.BASEMULTA = 'SALDO DEVEDOR';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.BASENP = '';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.CNPJCPF = '36858811400';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.CNPJORIGEMNEGOCIO = '1,02491E+12';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.COBRAMULTA = 'SIM';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.COBRATARIFA = 'NAO';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.CODAGENCIA = '19';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.CODCLIENTE = '2881632';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.CODCOLIGADA = '1';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.CODGERENTE = '0';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.CODPRODUTO = 'CCB SERVPF';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.CODSISTEMA = 'OC';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.CODUSUARIO = 'MHONORATO';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.CODVENDEDOR = '7118700479';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.COEFCOMIMP = '0.09864697';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.COEFPAR = '0.09864697';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.COEFSEMIMP = '0.09864697';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.DATCADASTRO = '2016-07-15 00:00:00.000';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.DATINI = '2016-07-11 00:00:00.000';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.DATINIPROP = '2016-07-11 00:00:00.000';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.DATPRIMVCT = '2016-08-11 00:00:00.000';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.DATSTATUS = '2016-07-11 00:00:00.000';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.DATVCT = '2017-07-11 00:00:00.000';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.DESCRETORNO = 'R0';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.ENVIOEXTRATO = 'IN';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.ESTAGIOPROPOSTA = 'RETORNO ANALISE';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.FILIAL = 'DELTA-JABOATAO';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.FINALIDADE = 'S';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.FINANCIAIOF = 'SIM';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.FINANCIASEGURO = 'SIM';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.FINANCIATARIFA = 'SIM';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.FORCALCJUROS = 'Exponencial';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.FORCALCPERMAN = 'LINEAR';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.FORLIB = 'TED';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.FORLIQ = 'CARNE';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.FORPAR = 'FIXAS';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.LIBAGENCIA = '289';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.LIBBCO = '237';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.LIBCNPJCPF = '1,02491E+12';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.LIBCONTA = '963208';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.MODALIDADEPRO = 'GG';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.NOMECLIENTE = 'MARIA JOSE FARIAS DE SANTANA';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.PDCCARENCIA = '';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.PDCPAR = 'MENSAL';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.PDCPERMAN = 'MENSAL';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.PDCTXAJUROS = 'MENSAL';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.PERCMULTA = '2';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.PERCNP = '0';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.PLANO = '40424';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.PROBOLETA = 'CCB SERVPF';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.PROGRAMA = '0';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.PROMOD = 'PROMOD';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.PRZAMORTIZA = '12';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.PRZCARENCIA = '0';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.PRZTOT = '12';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.QTDDIASMULTA = '1';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.QTDPAR = '12';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.QTDPARVRG = '0';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.SEQCNPJCPF = '0';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.STATUS = 'PENDENTE';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.TIPAMORTIZA = 'DECRESCENTE';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.TIPLEASING = 'R';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.TIPPROPOSTA = '30-30';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.TIPTXA = 'PRE';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.TIPVCT = 'ANIVERSARIO';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.TXABANCO = '2.347.883';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.TXABASICA = '2.333.349';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.TXABASICAIMP = '0';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.TXACUSTO = '0';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.TXAPERMAN = '10.000.000';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.TXASPREAD = '0';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.TXATIR = '2.347.883';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.VLRCET = '37.430.000';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.VLRENTRADA = '0';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.VLRFINANC = '35746.16';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.VLRIOF = '686.16';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.VLRLIQUIDO = '35060';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.VLRNP = '0';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.VLRPAR = '3458.56';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.VLRPREMSEGURO = '0';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.VLRPRINCIPAL = '35060';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.ConsultaDadosPrecificacao.VLRTARIFA = '0';
+		
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.DadosAvalistas.CNPJFORNEC = '499888270007-43';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.DadosAvalistas.CODGAR = 'AVALISTA';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.DadosAvalistas.DESGAR = 'ANTONIO DA SILVA';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.DadosAvalistas.SEQGAR = '1';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.BensPrecificacao.BensPrecificacao = '';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.BensPrecificacao.ANOFABRIC = '0';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.BensPrecificacao.ANOMODELO = '0';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.BensPrecificacao.BEMNOVO = '';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.BensPrecificacao.CHASSI = '';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.BensPrecificacao.CNPJFORNEC = '';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.BensPrecificacao.CODCATEGORIA = '';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.BensPrecificacao.CODGAR = 'ALIENACAO';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.BensPrecificacao.CODREGIAO = '';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.BensPrecificacao.COMBUSTIV = 'GAS';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.BensPrecificacao.DATVCT = '2017-07-11 00:00:00.000';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.BensPrecificacao.FINALIDADE = '';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.BensPrecificacao.INDFINANCIADO = 'S';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.BensPrecificacao.KM = '0';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.BensPrecificacao.MARCA = '';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.BensPrecificacao.MODELO = '';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.BensPrecificacao.NF_VLR = '38410';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.BensPrecificacao.QTDBEM = '0';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.BensPrecificacao.SEQGAR = '1';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.BensPrecificacao.VERSAO = '';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.BensPrecificacao.VLRCOTACAO = '0';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.BensPrecificacao.VLRENTRADA = '0';
+		SET OutputRoot.XMLNSC.AnalisePrecificacao.BensPrecificacao.VLRGAR = '35060';
+		
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;

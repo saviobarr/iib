@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?><!--File cpoConsultarPropostaCRM.wsdl, application cpoConsultarPropostaCRM--><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="cpoConsultarPropostaCRM" targetNamespace="http://cpoConsultarPropostaCRM" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://cpoConsultarPropostaCRM" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:documentation>
+    <wsdl:appinfo source="WMQI_APPINFO">
+      <MRWSDLAppInfo imported="true">
+        <binding hasEncoding="false" imported="true" name="cpoConsultarPropostaCRMHttpBinding" originalBindingStyle="document"/>
+      </MRWSDLAppInfo>
+    </wsdl:appinfo>
+  </wsdl:documentation>
+  
+  
+  
+  <wsdl:types>
+    
+        <xsd:schema targetNamespace="http://cpoConsultarPropostaCRM">
+      <xsd:include schemaLocation="xsd_xsd0.xsd"/>
+    </xsd:schema>
+    </wsdl:types>
+  <wsdl:message name="consultarPrecificacaoRequestMsg">
+    <wsdl:part element="tns:consultarPrecificacao" name="consultarPrecificacaoParameters"/>
+  </wsdl:message>
+  <wsdl:message name="consultarPrecificacaoResponseMsg">
+    <wsdl:part element="tns:consultarPrecificacaoResponse" name="consultarPrecificacaoResult"/>
+  </wsdl:message>
+    <wsdl:message name="consultarSomaContratosRequestMsg">
+    <wsdl:part element="tns:consultarSomaContratos" name="consultarSomaContratosParameters"/>
+  </wsdl:message>
+    <wsdl:message name="consultarSomaContratosResponseMsg">
+    <wsdl:part element="tns:consultarSomaContratosResponse" name="consultarSomaContratosResult"/>
+  </wsdl:message>
+    <wsdl:message name="consultarConsorcioRequestMsg">
+    <wsdl:part element="tns:consultarConsorcio" name="consultarConsorcioParameters"/>
+  </wsdl:message>
+    <wsdl:message name="consultarConsorcioResponseMsg">
+    <wsdl:part element="tns:consultarConsorcioResponse" name="consultarConsorcioResult"/>
+  </wsdl:message>
+    <wsdl:message name="consultarAcionistasRequestMsg">
+    <wsdl:part element="tns:consultarAcionistas" name="consultarAcionistasParameters"/>
+  </wsdl:message>
+    <wsdl:message name="consultarAcionistasResponseMsg">
+    <wsdl:part element="tns:consultarAcionistasResponse" name="consultarAcionistasResult"/>
+  </wsdl:message>
+    <wsdl:message name="consultarDadosEmpresaRequestMsg">
+    <wsdl:part element="tns:consultarDadosEmpresa" name="consultarDadosEmpresaParameters"/>
+  </wsdl:message>
+    <wsdl:message name="consultarDadosEmpresaResponseMsg">
+    <wsdl:part element="tns:consultarDadosEmpresaResponse" name="consultarDadosEmpresaResult"/>
+  </wsdl:message>
+    <wsdl:message name="consultarProponenteRequestMsg">
+    <wsdl:part element="tns:consultarProponente" name="consultarProponenteParameters"/>
+  </wsdl:message>
+    <wsdl:message name="consultarProponenteResponseMsg">
+    <wsdl:part element="tns:consultarProponenteResponse" name="consultarProponenteResult"/>
+  </wsdl:message>
+    <wsdl:message name="consultarAvalistaRequestMsg">
+    <wsdl:part element="tns:consultarAvalista" name="consultarAvalistaParameters"/>
+  </wsdl:message>
+    <wsdl:message name="consultarAvalistaResponseMsg">
+    <wsdl:part element="tns:consultarAvalistaResponse" name="consultarAvalistaResult"/>
+  </wsdl:message>
+    <wsdl:portType name="cpoConsultarPropostaCRM">
+    <wsdl:operation name="consultarPrecificacao">
+      <wsdl:input message="tns:consultarPrecificacaoRequestMsg" name="consultarPrecificacaoRequest"/>
+      <wsdl:output message="tns:consultarPrecificacaoResponseMsg" name="consultarPrecificacaoResponse"/>
+    </wsdl:operation>
+        <wsdl:operation name="consultarSomaContratos">
+      <wsdl:input message="tns:consultarSomaContratosRequestMsg" name="consultarSomaContratosRequest"/>
+      <wsdl:output message="tns:consultarSomaContratosResponseMsg" name="consultarSomaContratosResponse"/>
+    </wsdl:operation>
+        <wsdl:operation name="consultarConsorcio">
+      <wsdl:input message="tns:consultarConsorcioRequestMsg" name="consultarConsorcioRequest"/>
+      <wsdl:output message="tns:consultarConsorcioResponseMsg" name="consultarConsorcioResponse"/>
+    </wsdl:operation>
+        <wsdl:operation name="consultarAcionistas">
+      <wsdl:input message="tns:consultarAcionistasRequestMsg" name="consultarAcionistasRequest"/>
+      <wsdl:output message="tns:consultarAcionistasResponseMsg" name="consultarAcionistasResponse"/>
+    </wsdl:operation>
+        <wsdl:operation name="consultarDadosEmpresa">
+      <wsdl:input message="tns:consultarDadosEmpresaRequestMsg" name="consultarDadosEmpresaRequest"/>
+      <wsdl:output message="tns:consultarDadosEmpresaResponseMsg" name="consultarDadosEmpresaResponse"/>
+    </wsdl:operation>
+        <wsdl:operation name="consultarProponente">
+      <wsdl:input message="tns:consultarProponenteRequestMsg" name="consultarProponenteRequest"/>
+      <wsdl:output message="tns:consultarProponenteResponseMsg" name="consultarProponenteResponse"/>
+    </wsdl:operation>
+        <wsdl:operation name="consultarAvalista">
+      <wsdl:input message="tns:consultarAvalistaRequestMsg" name="consultarAvalistaRequest"/>
+      <wsdl:output message="tns:consultarAvalistaResponseMsg" name="consultarAvalistaResponse"/>
+    </wsdl:operation>
+    </wsdl:portType>
+  <wsdl:binding name="cpoConsultarPropostaCRMHttpBinding" type="tns:cpoConsultarPropostaCRM">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="consultarPrecificacao">
+            <soap:operation soapAction="http://cpoConsultarPropostaCRM/consultarPrecificacao"/>
+            <wsdl:input name="consultarPrecificacaoRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+      <wsdl:output name="consultarPrecificacaoResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+    </wsdl:operation>
+        <wsdl:operation name="consultarSomaContratos">
+            <soap:operation soapAction="http://cpoConsultarPropostaCRM/consultarSomaContratos"/>
+            <wsdl:input name="consultarSomaContratosRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+      <wsdl:output name="consultarSomaContratosResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+    </wsdl:operation>
+        <wsdl:operation name="consultarConsorcio">
+            <soap:operation soapAction="http://cpoConsultarPropostaCRM/consultarConsorcio"/>
+            <wsdl:input name="consultarConsorcioRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+      <wsdl:output name="consultarConsorcioResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+    </wsdl:operation>
+        <wsdl:operation name="consultarAcionistas">
+            <soap:operation soapAction="http://cpoConsultarPropostaCRM/consultarAcionistas"/>
+            <wsdl:input name="consultarAcionistasRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+      <wsdl:output name="consultarAcionistasResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+    </wsdl:operation>
+        <wsdl:operation name="consultarDadosEmpresa">
+            <soap:operation soapAction="http://cpoConsultarPropostaCRM/consultarDadosEmpresa"/>
+            <wsdl:input name="consultarDadosEmpresaRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+      <wsdl:output name="consultarDadosEmpresaResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+    </wsdl:operation>
+        <wsdl:operation name="consultarProponente">
+            <soap:operation soapAction="http://cpoConsultarPropostaCRM/consultarProponente"/>
+            <wsdl:input name="consultarProponenteRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+      <wsdl:output name="consultarProponenteResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+    </wsdl:operation>
+        <wsdl:operation name="consultarAvalista">
+      <soap:operation soapAction="http://cpoConsultarPropostaCRM/consultarAvalista"/>
+      <wsdl:input name="consultarAvalistaRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarAvalistaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    </wsdl:binding>
+  <wsdl:service name="cpoConsultarPropostaCRMHttpService">
+    <wsdl:port binding="tns:cpoConsultarPropostaCRMHttpBinding" name="cpoConsultarPropostaCRMHttpPort">
+      <soap:address location="http://localhost:7801/cpoConsultarPropostaCRM"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><!--File cpoConsultarPropostaCRM_InlineSchema1.xsd, application cpoConsultarPropostaCRM--><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://cpoConsultarPropostaCRM" xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions" xmlns:tns="http://cpoConsultarPropostaCRM">
+      <xsd:element ibmSchExtn:docRoot="true" name="consultarPrecificacao">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="consultarPrecificacaoRequest" nillable="true" type="xsd:anyType"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element ibmSchExtn:docRoot="true" name="consultarPrecificacaoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="consultarPrecificacaoResponse" nillable="true" type="xsd:anyType"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="consultarSomaContratos">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="consultarSomaContratosRequest" nillable="true" type="xsd:anyType"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="consultarSomaContratosResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="consultarSomaContratosRequest" nillable="true" type="xsd:anyType"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="consultarConsorcio">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="consultarConsorcioRequest" nillable="true" type="xsd:anyType"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="consultarConsorcioResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="consultarConsorcioResponse" nillable="true" type="xsd:anyType"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="consultarAcionistas">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="consultarAcionistasRequest" nillable="true" type="xsd:anyType"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="consultarAcionistasResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="consultarAcionistasResponse" nillable="true" type="xsd:anyType"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="consultarDadosEmpresa">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="consultarDadosEmpresaRequest" nillable="true" type="xsd:anyType"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="consultarDadosEmpresaResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="consultarDadosEmpresaResponse" nillable="true" type="xsd:anyType"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="consultarProponente">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="consultarProponenteRequest" nillable="true" type="xsd:anyType"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="consultarProponenteResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="consultarProponenteResponse" nillable="true" type="xsd:anyType"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="consultarAvalista">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="consultarAvalisaRequest" nillable="true" type="xsd:anyType"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="consultarAvalistaResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="consultarAvalisaResponse" nillable="true" type="xsd:anyType"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

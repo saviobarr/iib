@@ -1,0 +1,102 @@
+BROKER SCHEMA br.com.rodobens.consultarPropostaCRM
+
+
+CREATE COMPUTE MODULE consultarDadosProponente_SF_Mock
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		-- CALL CopyMessageHeaders();
+		-- CALL CopyEntireMessage();
+		
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.DadosCadastraisPF = '';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.Dados = '';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.ACRESCIMORENDA = '0';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.BAIRRO = 'CENTRO';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.BAIRROCOMERCIAL = 'CENTRO';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.BAIRROCOMERCIALCONJUGE = 'CENTRO';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.CARGO = 'ADMINISTRADOR EMPRESAS';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.CARGOCONJUGE = 'PROPRIETARIO ESTABEL COMERCIAL';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.CELULAR = 'null';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.CEP = '15290000';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.CEPCOMERCIAL = '15290000';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.CEPCOMERCIALCONJUGE = '15290000';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.CIDADE = 'BURITAMA';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.CIDADECOMERCIAL = 'BURITAMA';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.CIDADECOMERCIALCONJUGE = 'BURITAMA';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.CNPJEMPRESA = '72.848.906.000.171';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.CNPJEMPRESACONJUGE = '72848906000171';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.CNPJOUTRAS = 'null';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.CPFCONJUGE = '3309572870';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.DATAEMISSAO = '1986-10-07 00:00:00.000';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.DATAEMISSAOCONJUGE = '1979-07-22 00:00:00.000';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.DATAENTRADABRASIL = 'NULL';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.DATANASCCONJUGE = '1960-03-09 00:00:00.000';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.DATANASCFUND = '1965-03-05 00:00:00.000';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.ENDERECO = 'RUA ANTONIO TEIXEIRA DUARTE , 423';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.ENDERECOANT = 'null';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.ENDERECOCOMERCIAL = 'RUA ANTONIO TEIXEIRA DUARTE , 607';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.ENDERECOCOMERCIALCONJUGE = 'RUA ANTONIO TEIXEIRA DUARTE, 607';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.ESTADOCIVIL = 'C';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.GRAUINSTRUCAO = 'SUPERIOR COMPLETO';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.IDENTIDADE = '17138645';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.IDENTIDADECONJUGE = '11951830';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.INDAVALISTA = 'N';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.INICIOATIVIDADE = '1993-09-27 00:00:00.000';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.INICIOATIVIDADECONJUGE = '1993-09-27 00:00:00.000';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.NACIONALIDADE = 'BRASIL';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.NATOCUPACAO = '6';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.NATURALIDADE = 'BURITAMA';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.NOMECONJUGE = 'JOSE ANTONIO DE OLIVEIRA';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.NOMEMAE = 'EUMIRA FREITAS DA COSTA';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.NOMEPAI = 'WALKIRIO FERREIRA DA COSTA';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.NOMERAZAO = 'ELIANA ALZIRA DA COSTA OLIVEIRA';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.NRODEPENDENTES = '0';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.ORGAOEMISSOR = 'SSP/SP';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.ORGAOEMISSORCONJUGE = 'SSP';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.ORIGEMOUTRAS = 'null';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.PERCPARTICIPACAO = '50';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.PERCPARTICIPACAOCONJUGE = '50';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.PERCPARTOUTRAS = '0';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.RAMALANT = 'null';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.RAMOATUACAO = 'PRIVADO - COMERCIO';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.RENDAMENSAL = '45000';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.RENDAMENSALCONJUGE = '45000';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.SEXO = 'F';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.TELCOMERCIALCONJUGE = '1836911614';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.TELEFONE = '1736911614';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.TELEFONEANT = 'null';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.TELEFONECOMERCIAL = '1836911614';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.TEMPORESIDENCIA = '0';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.TEMPORESIDENCIAANO = '23';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.TEMPORESIDENCIAANT = '0';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.TEMPORESIDENCIAANTANO = '0';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.TEMPOSERVICOANT = '0';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.TEMPOSERVICOANTANO = '0';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.TIPORESIDENCIA = 'PROPRIA_Q';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.TIPOSERVICO = 'MADEIRAO MADEIRA BURITAMA LTDA ME';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.TIPOSERVICOANT = 'null';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.TIPOSERVICOCONJUGE = 'MADEIRAO MADEIREIRA BURITAMA LTDA    ME';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.UF = 'SP';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.UFCOMERCIAL = 'SP';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.UFCOMERCIALCONJUGE = 'SP';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.UFNATURALIDADE = 'SP';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.VALORIMOVEL = '0';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.VALORMENSAL = '0';
+		SET OutputRoot.XMLNSC.DadosCadastraisPF.Dados.VALOROUTRAS = '0';
+		
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;

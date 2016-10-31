@@ -1,0 +1,56 @@
+BROKER SCHEMA br.com.rodobens.consultarPropostaCRM.pj
+
+
+CREATE COMPUTE MODULE consultarDadosEmpresa_Compute
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		-- CALL CopyMessageHeaders();
+		-- CALL CopyEntireMessage();
+		
+		SET OutputRoot.XMLNSC.root.element[1].element = '';
+		SET OutputRoot.XMLNSC.root.element[1].BAIRRO = 'GUAMA';
+		SET OutputRoot.XMLNSC.root.element[1].CAPITALSOCIAL = '500000';
+		SET OutputRoot.XMLNSC.root.element[1].CELULAR = '';
+		SET OutputRoot.XMLNSC.root.element[1].CEP = '66073160';
+		SET OutputRoot.XMLNSC.root.element[1].CIDADE = 'BELEM';
+		SET OutputRoot.XMLNSC.root.element[1].COMPRASMEDIAS = '3.8235288E7';
+		SET OutputRoot.XMLNSC.root.element[1].CONTATO = '';
+		SET OutputRoot.XMLNSC.root.element[1].DATANASCFUND = '1986-03-18 00:00:00.000';
+		SET OutputRoot.XMLNSC.root.element[1].DATAULTALTERACAO = '2009-09-10 00:00:00.000';
+		SET OutputRoot.XMLNSC.root.element[1].EMAIL = '';
+		SET OutputRoot.XMLNSC.root.element[1].ENDERECO = 'AV CONSELHEIRO FURTADO , 3906';
+		SET OutputRoot.XMLNSC.root.element[1].FATURAMENTOMEDIO = '3186274.0';
+		SET OutputRoot.XMLNSC.root.element[1].FAX = '';
+		SET OutputRoot.XMLNSC.root.element[1].INCFATURAMENTO = '1';
+		SET OutputRoot.XMLNSC.root.element[1].MESESMEDIA = '12';
+		SET OutputRoot.XMLNSC.root.element[1].NOMEFANTASIA = 'FORMULA ZERO';
+		SET OutputRoot.XMLNSC.root.element[1].NOMERAZAO = 'BRAZ e BRAZ LTDA';
+		SET OutputRoot.XMLNSC.root.element[1].PERCEXPORTACAO = '50';
+		SET OutputRoot.XMLNSC.root.element[1].PERCIMPORTACAO = '30';
+		SET OutputRoot.XMLNSC.root.element[1].QTDFILIAIS = '5';
+		SET OutputRoot.XMLNSC.root.element[1].QTDFUNCIONARIOS = '265';
+		SET OutputRoot.XMLNSC.root.element[1].RAMALFAX = '';
+		SET OutputRoot.XMLNSC.root.element[1].RAMALFONE = '';
+		SET OutputRoot.XMLNSC.root.element[1].RAMOATIVIDADE = 'PRIVADO - COMERCIO';
+		SET OutputRoot.XMLNSC.root.element[1].SITE = '';
+		SET OutputRoot.XMLNSC.root.element[1].TELEFONE = '9132055700';
+		SET OutputRoot.XMLNSC.root.element[1].UF = 'PA';
+		
+		
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;

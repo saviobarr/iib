@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ComIbmLabel.msgnode="ComIbmLabel.msgnode" xmlns:ComIbmRouteToLabel.msgnode="ComIbmRouteToLabel.msgnode" xmlns:ComIbmSOAPInput.msgnode="ComIbmSOAPInput.msgnode" xmlns:ComIbmSOAPReply.msgnode="ComIbmSOAPReply.msgnode" xmlns:br_com_rodobens_consultarPropostaCRM_consultarAvalista_SF.subflow="br/com/rodobens/consultarPropostaCRM/consultarAvalista_SF.subflow" xmlns:br_com_rodobens_consultarPropostaCRM_consultarDadosConsorcio_SF.subflow="br/com/rodobens/consultarPropostaCRM/consultarDadosConsorcio_SF.subflow"
+    xmlns:br_com_rodobens_consultarPropostaCRM_consultarDadosPrecificacao_SF.subflow="br/com/rodobens/consultarPropostaCRM/consultarDadosPrecificacao_SF.subflow" xmlns:br_com_rodobens_consultarPropostaCRM_consultarDadosProponente_SF.subflow="br/com/rodobens/consultarPropostaCRM/consultarDadosProponente_SF.subflow" xmlns:br_com_rodobens_consultarPropostaCRM_pj_consultarAcionistasEmpresa_SF.subflow="br/com/rodobens/consultarPropostaCRM/pj/consultarAcionistasEmpresa_SF.subflow" xmlns:br_com_rodobens_consultarPropostaCRM_pj_consultarDadosEmpresa_SF.subflow="br/com/rodobens/consultarPropostaCRM/pj/consultarDadosEmpresa_SF.subflow"
+    xmlns:br_com_rodobens_consultarPropostaCRM_somarContratosCliente_SF.subflow="br/com/rodobens/consultarPropostaCRM/somarContratosCliente_SF.subflow" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:eflow="http://www.ibm.com/wbi/2005/eflow" xmlns:utility="http://www.ibm.com/wbi/2005/eflow_utility" nsURI="br/com/rodobens/consultarPropostaCRM/ConsultarPropostaCRM_MF.msgflow" nsPrefix="br_com_rodobens_consultarPropostaCRM_ConsultarPropostaCRM_MF.msgflow">
+  <eClassifiers xmi:type="eflow:FCMComposite" name="FCMComposite_1">
+    <eSuperTypes href="http://www.ibm.com/wbi/2005/eflow#//FCMBlock"/>
+    <translation xmi:type="utility:TranslatableString" key="ConsultarPropostaCRM_MF" bundleName="br/com/rodobens/consultarPropostaCRM/ConsultarPropostaCRM_MF" pluginId="cpo-consultarProposta_CRM"/>
+    <colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/cpo-consultarProposta_CRM/icons/full/obj16/ConsultarPropostaCRM_MF.gif"/>
+    <colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/cpo-consultarProposta_CRM/icons/full/obj30/ConsultarPropostaCRM_MF.gif"/>
+    <composition>
+      <nodes xmi:type="br_com_rodobens_consultarPropostaCRM_consultarDadosPrecificacao_SF.subflow:FCMComposite_1" xmi:id="FCMComposite_1_4" location="286,59">
+        <translation xmi:type="utility:ConstantString" string="consultarDadosPrecificacao_SF"/>
+      </nodes>
+      <nodes xmi:type="br_com_rodobens_consultarPropostaCRM_consultarDadosProponente_SF.subflow:FCMComposite_1" xmi:id="FCMComposite_1_6" location="295,127">
+        <translation xmi:type="utility:ConstantString" string="consultarDadosProponente_SF"/>
+      </nodes>
+      <nodes xmi:type="br_com_rodobens_consultarPropostaCRM_somarContratosCliente_SF.subflow:FCMComposite_1" xmi:id="FCMComposite_1_8" location="305,220">
+        <translation xmi:type="utility:ConstantString" string="somarContratosCliente_SF"/>
+      </nodes>
+      <nodes xmi:type="br_com_rodobens_consultarPropostaCRM_consultarDadosConsorcio_SF.subflow:FCMComposite_1" xmi:id="FCMComposite_1_10" location="299,316">
+        <translation xmi:type="utility:ConstantString" string="consultarDadosConsorcio_SF"/>
+      </nodes>
+      <nodes xmi:type="ComIbmSOAPInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="42,7" wsdlFileName="RemoteFiles/cpoConsultarPropostaCRM.wsdl" selectedPortType="cpoConsultarPropostaCRM" selectedBinding="cpoConsultarPropostaCRMHttpBinding" selectedPort="cpoConsultarPropostaCRMHttpPort" targetNamespace="http://cpoConsultarPropostaCRM" useHTTPTransport="true" urlSelector="/cpo-ConsultarProposta_CRM" allowQueryWSDL="true">
+        <translation xmi:type="utility:ConstantString" string="Consulta PF"/>
+      </nodes>
+      <nodes xmi:type="ComIbmSOAPReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_11" location="736,341">
+        <translation xmi:type="utility:ConstantString" string="SOAP Reply"/>
+      </nodes>
+      <nodes xmi:type="ComIbmRouteToLabel.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_12" location="183,3">
+        <translation xmi:type="utility:ConstantString" string="Route To Label"/>
+      </nodes>
+      <nodes xmi:type="ComIbmLabel.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_13" location="93,59" labelName="consultarPrecificacao">
+        <translation xmi:type="utility:ConstantString" string="consultarPrecificacao"/>
+      </nodes>
+      <nodes xmi:type="ComIbmLabel.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_14" location="93,127" labelName="consultarProponente">
+        <translation xmi:type="utility:ConstantString" string="consultarProponente"/>
+      </nodes>
+      <nodes xmi:type="ComIbmLabel.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_15" location="73,220" labelName="consultarSomaContratos">
+        <translation xmi:type="utility:ConstantString" string="consultarSomaContratos"/>
+      </nodes>
+      <nodes xmi:type="ComIbmLabel.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_16" location="86,314" labelName="consultarConsorcio">
+        <translation xmi:type="utility:ConstantString" string="consultarConsorcio"/>
+      </nodes>
+      <nodes xmi:type="br_com_rodobens_consultarPropostaCRM_pj_consultarAcionistasEmpresa_SF.subflow:FCMComposite_1" xmi:id="FCMComposite_1_17" location="308,392">
+        <translation xmi:type="utility:ConstantString" string="consultarAcionistasEmpresa_SF"/>
+      </nodes>
+      <nodes xmi:type="ComIbmLabel.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_18" location="82,392" labelName="consultarAcionistas">
+        <translation xmi:type="utility:ConstantString" string="consultarAcionistas"/>
+      </nodes>
+      <nodes xmi:type="br_com_rodobens_consultarPropostaCRM_pj_consultarDadosEmpresa_SF.subflow:FCMComposite_1" xmi:id="FCMComposite_1_19" location="326,500">
+        <translation xmi:type="utility:ConstantString" string="consultarDadosEmpresa_SF"/>
+      </nodes>
+      <nodes xmi:type="ComIbmLabel.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_20" location="82,501" labelName="consultarDadosEmpresa">
+        <translation xmi:type="utility:ConstantString" string="consultarDadosEmpresa"/>
+      </nodes>
+      <nodes xmi:type="ComIbmLabel.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="91,595" labelName="consultarAvalista">
+        <translation xmi:type="utility:ConstantString" string="consultarAvalista"/>
+      </nodes>
+      <nodes xmi:type="br_com_rodobens_consultarPropostaCRM_consultarAvalista_SF.subflow:FCMComposite_1" xmi:id="FCMComposite_1_2" location="355,595">
+        <translation xmi:type="utility:ConstantString" string="consultarAvalista_SF"/>
+      </nodes>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_2" targetNode="FCMComposite_1_11" sourceNode="FCMComposite_1_4" sourceTerminalName="OutTerminal.Output" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_3" targetNode="FCMComposite_1_12" sourceNode="FCMComposite_1_3" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_10" targetNode="FCMComposite_1_4" sourceNode="FCMComposite_1_13" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.Input"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_11" targetNode="FCMComposite_1_6" sourceNode="FCMComposite_1_14" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.Input"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_12" targetNode="FCMComposite_1_11" sourceNode="FCMComposite_1_6" sourceTerminalName="OutTerminal.Output" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_13" targetNode="FCMComposite_1_8" sourceNode="FCMComposite_1_15" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.Input"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_14" targetNode="FCMComposite_1_11" sourceNode="FCMComposite_1_8" sourceTerminalName="OutTerminal.Output" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_15" targetNode="FCMComposite_1_10" sourceNode="FCMComposite_1_16" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.Input"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_16" targetNode="FCMComposite_1_11" sourceNode="FCMComposite_1_10" sourceTerminalName="OutTerminal.Output" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_17" targetNode="FCMComposite_1_11" sourceNode="FCMComposite_1_17" sourceTerminalName="OutTerminal.Output" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_18" targetNode="FCMComposite_1_17" sourceNode="FCMComposite_1_18" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.Input"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_19" targetNode="FCMComposite_1_19" sourceNode="FCMComposite_1_20" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.Input"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_20" targetNode="FCMComposite_1_11" sourceNode="FCMComposite_1_19" sourceTerminalName="OutTerminal.Output" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_1" targetNode="FCMComposite_1_2" sourceNode="FCMComposite_1_1" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.Input"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_4" targetNode="FCMComposite_1_11" sourceNode="FCMComposite_1_2" sourceTerminalName="OutTerminal.Output" targetTerminalName="InTerminal.in"/>
+    </composition>
+    <propertyOrganizer/>
+    <stickyBoard/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,40 @@
+
+
+Importing file: \cpoConsultarPropostaCRM.wsdl
+
+The WSDL import will proceed with bindings cpoConsultarPropostaCRMHttpBinding.
+Creating wsdl schema document for RemoteFiles/cpoConsultarPropostaCRM.xsd.
+Parsing wsdl binding {http://cpoConsultarPropostaCRM}cpoConsultarPropostaCRMHttpBinding.
+Parsing wsdl binding input consultarPrecificacao.
+Parsing wsdl binding output consultarPrecificacao.
+Parsing wsdl binding input consultarSomaContratos.
+Parsing wsdl binding output consultarSomaContratos.
+Parsing wsdl binding input consultarConsorcio.
+Parsing wsdl binding output consultarConsorcio.
+Parsing wsdl binding input consultarAcionistas.
+Parsing wsdl binding output consultarAcionistas.
+Parsing wsdl binding input consultarDadosEmpresa.
+Parsing wsdl binding output consultarDadosEmpresa.
+Parsing wsdl binding input consultarProponente.
+Parsing wsdl binding output consultarProponente.
+Parsing wsdl binding input consultarAvalista.
+Parsing wsdl binding output consultarAvalista.
+Processing doc style for operation consultarPrecificacao.
+Processing doc style for operation consultarSomaContratos.
+Processing doc style for operation consultarConsorcio.
+Processing doc style for operation consultarAcionistas.
+Processing doc style for operation consultarDadosEmpresa.
+Processing doc style for operation consultarProponente.
+Processing doc style for operation consultarAvalista.
+Populating WSDL schema RemoteFiles/cpoConsultarPropostaCRM.xsd.
+Creating file RemoteFiles/cpoConsultarPropostaCRM.xsd in the workspace.
+Creating file /cpo-consultarProposta_CRM/xsd_xsd0.xsd in the workspace.
+Copying source WSDL cpoConsultarPropostaCRM?wsdl to cpoConsultarPropostaCRM.wsdl.
+
+Elapsed time processing this message definition file: 0.663 seconds
+Number of warnings for this message definition file: 0
+
+
+Number of files processed: 1
+
+
