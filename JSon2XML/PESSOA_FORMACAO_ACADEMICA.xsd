@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ExemploRDB">
+	<xsd:complexType name="PESSOA_FORMACAO_ACADEMICA">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="SEQ_BUP_PESSOA_FORM_ACADEMICA" type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="NOM_LOGIN" type="xsd:string">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="JSon2XML" targetNamespace="http://JSon2XML" xmlns:bons1="http://ExemploRDB" xmlns:bons2="http://Exemplo" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://JSon2XML" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:documentation>
+    <wsdl:appinfo source="WMQI_APPINFO">
+      <MRWSDLAppInfo imported="true">
+        <binding hasEncoding="false" imported="true" name="JSon2XMLHttpBinding" originalBindingStyle="document"/>
+        <generatedXSD location="JSon2XML_InlineSchema1.xsd"/>
+      </MRWSDLAppInfo>
+    </wsdl:appinfo>
+  </wsdl:documentation>
+  
+  
+  
+  
+  
+  <wsdl:types>
+    
+        <xsd:schema targetNamespace="http://JSon2XML" xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions">
+            <xsd:import namespace="http://Exemplo" schemaLocation="PESSOA_FISICA_NO_WRAPPER.xsd"/>
+            <xsd:import namespace="http://ExemploRDB" schemaLocation="PESSOA_FISICA.xsd"/>
+            <xsd:include schemaLocation="JSon2XML_InlineSchema1.xsd"/>
+    </xsd:schema>
+    </wsdl:types>
+  <wsdl:message name="testWrapperRequestMsg">
+    <wsdl:part element="tns:testWrapper" name="testWrapperParameters"/>
+  </wsdl:message>
+  <wsdl:message name="testWrapperResponseMsg">
+    <wsdl:part element="tns:testWrapperResponse" name="testWrapperResult"/>
+  </wsdl:message>
+    <wsdl:message name="testNoWrapperRequestMsg">
+    <wsdl:part element="tns:testNoWrapper" name="testNoWrapperParameters"/>
+  </wsdl:message>
+    <wsdl:message name="testNoWrapperResponseMsg">
+    <wsdl:part element="tns:testNoWrapperResponse" name="testNoWrapperResult"/>
+  </wsdl:message>
+    <wsdl:portType name="JSon2XML">
+    <wsdl:operation name="testWrapper">
+      <wsdl:input message="tns:testWrapperRequestMsg" name="testWrapperRequest"/>
+      <wsdl:output message="tns:testWrapperResponseMsg" name="testWrapperResponse"/>
+    </wsdl:operation>
+        <wsdl:operation name="testNoWrapper">
+      <wsdl:input message="tns:testNoWrapperRequestMsg" name="testNoWrapperRequest"/>
+      <wsdl:output message="tns:testNoWrapperResponseMsg" name="testNoWrapperResponse"/>
+    </wsdl:operation>
+    </wsdl:portType>
+  <wsdl:binding name="JSon2XMLHttpBinding" type="tns:JSon2XML">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="testWrapper">
+            <soap:operation soapAction="http://JSon2XML/testWrapper"/>
+            <wsdl:input name="testWrapperRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+      <wsdl:output name="testWrapperResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+    </wsdl:operation>
+        <wsdl:operation name="testNoWrapper">
+      <soap:operation soapAction="http://JSon2XML/testNoWrapper"/>
+      <wsdl:input name="testNoWrapperRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="testNoWrapperResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    </wsdl:binding>
+  <wsdl:service name="JSon2XMLHttpService">
+    <wsdl:port binding="tns:JSon2XMLHttpBinding" name="JSon2XMLHttpPort">
+      <soap:address location="http://localhost:7800/JSon2XML"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

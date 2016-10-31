@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://Exemplo" xmlns:bons0="http://ExemploRDB">
+	<xsd:import schemaLocation="PESSOA_FORMACAO_ACADEMICA.xsd"
+		namespace="http://ExemploRDB">
+	</xsd:import>
+	<xsd:complexType name="PESSOA_FISICA_NO_WRAPPER">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="nome" type="xsd:string"></xsd:element>
+			<xsd:element minOccurs="0" name="FORMACAO_ACADEMICA"
+				type="bons0:PESSOA_FORMACAO_ACADEMICA" maxOccurs="unbounded">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

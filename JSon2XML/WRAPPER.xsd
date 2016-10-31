@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ExemploRDB" xmlns:bons0="http://ExemploRDB">
+	<xsd:include schemaLocation="PESSOA_FORMACAO_ACADEMICA.xsd"/>
+	<xsd:complexType name="WRAPPER">
+		<xsd:sequence>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="PESSOA_FORMACAO_ACADEMICA" type="bons0:PESSOA_FORMACAO_ACADEMICA">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

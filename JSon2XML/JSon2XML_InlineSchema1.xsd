@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://JSon2XML" xmlns:Q1="http://ExemploRDB" xmlns:Q2="http://Exemplo" xmlns:tns="http://JSon2XML">
+    <xsd:import namespace="http://ExemploRDB" schemaLocation="PESSOA_FISICA.xsd"/>
+    <xsd:import namespace="http://Exemplo" schemaLocation="PESSOA_FISICA_NO_WRAPPER.xsd"/>
+    <xsd:element xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions" ibmSchExtn:docRoot="true" name="testWrapper">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="pessoaFisica" nillable="true" type="Q1:PESSOA_FISICA"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions" ibmSchExtn:docRoot="true" name="testWrapperResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="pessoaFisica" nillable="true" type="Q1:PESSOA_FISICA"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    <xsd:element xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions" ibmSchExtn:docRoot="true" name="testNoWrapper">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="pessoaFisica" nillable="true" type="Q2:PESSOA_FISICA_NO_WRAPPER"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions" ibmSchExtn:docRoot="true" name="testNoWrapperResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="pessoaFisica" nillable="true" type="Q2:PESSOA_FISICA_NO_WRAPPER"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

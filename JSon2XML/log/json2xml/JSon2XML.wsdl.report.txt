@@ -1,0 +1,16 @@
+
+
+Importing file: E:\work\Rodobens\IIB\3-Execucao\1-Fontes\JSon2XML\JSon2XML.wsdl
+
+The WSDL import will proceed with bindings JSon2XMLHttpBinding.
+Creating wsdl schema document for platform:/resource/JSon2XML/JSon2XML.wsdl.
+Parsing wsdl binding {http://JSon2XML}JSon2XMLHttpBinding.
+Parsing wsdl binding input testWrapper.
+Parsing wsdl binding output testWrapper.
+Parsing wsdl binding input testNoWrapper.
+Parsing wsdl binding output testNoWrapper.
+Processing doc style for operation testWrapper.
+Processing doc style for operation testNoWrapper.
+Populating WSDL schema JSon2XML.xsd.
+Creating file JSon2XML.xsd in the workspace.
+Copying source WSDL JSon2XML.wsdl to JSon2XML.wsdl.
